@@ -1,0 +1,14 @@
+body {
+  height: 4000px;
+}
+.box ,.box2 ,.box3{
+  margin:100px auto;
+  width: 700px;
+  background-color: aqua;
+  padding: 20px;
+color: brown;
+text-shadow: 6px 6px 6px ;
+text-align: center;
+word-spacing: 0px;
+}
+
