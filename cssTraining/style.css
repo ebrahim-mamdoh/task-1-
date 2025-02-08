@@ -1,14 +1,36 @@
 body {
   height: 4000px;
+  box-sizing: border-box;
 }
-.box ,.box2 ,.box3{
-  margin:100px auto;
-  width: 700px;
-  background-color: aqua;
-  padding: 20px;
-color: brown;
-text-shadow: 6px 6px 6px ;
-text-align: center;
-word-spacing: 0px;
+:root{
+  --mainColor:red;
 }
 
+
+.container{
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  border: 2px solid black;
+display: flex;
+flex-wrap:wrap;
+justify-content:space-around ;
+align-items: center;
+}
+
+.card {
+  width: 25%;
+  height: 100px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color:var(--mainColor)  ;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+ul{
+  list-style:none;
+}
