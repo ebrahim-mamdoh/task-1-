@@ -1,36 +1,54 @@
-body {
-  height: 4000px;
-  box-sizing: border-box;
-}
-:root{
-  --mainColor:red;
-}
+.spinner { 
+  background-color: #eee; 
+  width: 50px; 
+  height: 50px; 
+  margin: 300px auto; 
+  border: solid 4px red; 
+  border-left: solid 4px #eee ; 
+  border-radius: 50%; 
 
+  animation-name: spinner; 
+  animation-duration: 1s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear; 
 
-.container{
-  width: 80%;
-  margin: auto;
-  height: 500px;
-  border: 2px solid black;
+} 
+
+@keyframes spinner {  
+   
+  0% { transform: rotate(0deg); } 
+
+  100% { transform: rotate(360deg); } 
+} 
+
+body{
 display: flex;
-flex-wrap:wrap;
-justify-content:space-around ;
-align-items: center;
-}
-
-.card {
-  width: 25%;
-  height: 100px;
-  border: 2px solid red;
-  border-radius: 10px;
-  background-color:var(--mainColor)  ;
-display: flex;
-align-items: center;
 justify-content: center;
-
+  align-items: center;
 }
 
+.card{
+  width: 300px;
+  height: 300px;
+  display: flex;
+justify-content: center;
+  align-items: center;
+  border: 2px solid #f43131;
+background-color:gray ;
 
-ul{
-  list-style:none;
+
+
+animation-name: change-color; 
+animation-duration: 5s;
 }
+
+@keyframes change-color {  
+   
+  0% { background-color: gray; } 
+  25% { background-color: yellow; } 
+  50% { background-color: green; } 
+  75% { background-color: blue; } 
+  100% { background-color: red; } 
+} 
+
+
